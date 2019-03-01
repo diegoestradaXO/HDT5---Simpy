@@ -1,13 +1,20 @@
+#Autores:
+#Diego Estrada 18540
+#Isabel Ortiz 18176
+#Fecha de entrega: 01/03/2019
+#Descripción: Este programa realiza una simulación de un sistema operativo, con RAM y número de CPUs 
+#determinados, es posible cambiar los parámetros con el fin de comparar el rendimiento.
+
 import simpy
 import random
 import math
 
-#Parámetros
+#Parámetros para variar el rendimiento
 CapacidadRAM = 100 #Capacidad de RAM
 NumeroProcesos = 200 # Cantidad de procesos a realizar
-NumeroCPU = 2 #Numeros de CPU
+NumeroCPU = 1 #Numeros de CPU
 Interval = 1 # Intervalo
-InstruccionesCPU = 3  # Cuantas instrucciones realiza el CPU por unidad de tiempo
+InstruccionesCPU = 6  # Cuantas instrucciones realiza el CPU por unidad de tiempo
 TiempoOperacionInOut = 1  # Tiempo de operacion I/O
 TiemposDeProcesos = []  # Lista para almacenar tiempos
 random.seed(300) 
